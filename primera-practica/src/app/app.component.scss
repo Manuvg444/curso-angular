@@ -1,0 +1,18 @@
+.navbar li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}

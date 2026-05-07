@@ -1,0 +1,25 @@
+<div class="contacto-container">
+    <h2>Contacto</h2>
+    <form [formGroup]="perfilForm" (ngSubmit)="enviarFormulario()">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" formControlName="nombre">
+        </div>
+        <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email">
+        </div>
+        <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" formControlName="mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+
+
+
+
+
+<app-footer></app-footer>
