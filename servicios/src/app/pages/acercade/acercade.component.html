@@ -1,0 +1,20 @@
+<h2>Lista de Usuarios</h2>
+<table border="1">
+    <thead>
+        <tr>ID</tr>
+        <tr>Nombre</tr>
+        <tr>Email</tr>
+        <tr>Phone</tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let u of listaUsuarios" [routerLink]="['/detalle',u.id]" style="cursor: pointer;">
+            <td>{{ u.id }}</td>
+            <td>{{ u.name }}</td>
+            <td>{{ u.email }}</td>
+            <td>{{ u.phone }}</td>
+        </tr>
+
+    </tbody>
+
+</table>
