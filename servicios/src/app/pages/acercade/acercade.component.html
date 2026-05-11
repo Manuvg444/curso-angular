@@ -1,20 +1,24 @@
-<h2>Lista de Usuarios</h2>
-<table border="1">
-    <thead>
-        <tr>ID</tr>
-        <tr>Nombre</tr>
-        <tr>Email</tr>
-        <tr>Phone</tr>
-    </thead>
-    <tbody>
+<div class="tabla-container">
+    <h2 class="title">Lista de Usuarios</h2>
 
-        <tr *ngFor="let u of listaUsuarios" [routerLink]="['/detalle',u.id]" style="cursor: pointer;">
-            <td>{{ u.id }}</td>
-            <td>{{ u.name }}</td>
-            <td>{{ u.email }}</td>
-            <td>{{ u.phone }}</td>
-        </tr>
+    <table class="tabla-usuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    </tbody>
+            <tr *ngFor="let u of listaUsuarios" [routerLink]="['/detalle',u.id]">
+                <td>{{ u.id }}</td>
+                <td>{{ u.name }}</td>
+                <td>{{ u.email }}</td>
+                <td>{{ u.phone }}</td>
+            </tr>
+        </tbody>
+    </table>
 
-</table>
+</div>

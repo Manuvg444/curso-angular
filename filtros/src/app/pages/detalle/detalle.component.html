@@ -1,0 +1,33 @@
+<div *ngIf="user" style="padding: 20px; font-family: Arial, sans-serif;">
+
+    <div style="max-width: 500px; margin: auto; border: 1px solid #ddd; 
+border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+
+        <div style="background: #007bff; color: white; padding: 20px; text-align: center;">
+
+            <h2 style="margin:0;"> {{ user.name }} </h2>
+            <p style="margin: 5px 0 0 0; opacity: 0.8;"> {{ user.email }} </p>
+
+        </div>
+
+
+        <div style="padding: 20px; line-height: 1.6;">
+            <p><strong>Teléfono:</strong> {{ user.phone }}</p>
+            <p><strong>Sitio web:</strong> <a [href]="'http://' + user.website" target="_blank">{{
+                    user.website}}</a></p>
+
+            <hr>
+            <p><strong>Ciudad:</strong> {{ user.address.city }}</p>
+            <p><strong>Calle:</strong> {{ user.address.street }}</p>
+            <p><strong>Empresa:</strong> {{ user.company.name }}</p>
+
+        </div>
+
+        <button routerLink="/acercade" style="width: 100%; padding: 15px; border:none; background: #f8f9fa; 
+                    cursor: pointer; border-top: 1px solid #ddd; font-weight: bold;">Volver
+            a al lista</button>
+
+
+
+    </div>
+</div>

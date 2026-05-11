@@ -7,9 +7,39 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.tabla-container {
-    max-width: 1000px;
-    margin: 0 auto;
+.table-container {
+    padding: 40px;
+    background-color: #0d0d0d;
+    min-height: 100vh;
+}
+
+.panel-filtros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.input,
+.select {
+    padding: 10px 15px;
+    border: 2px solid #00f2fe;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #cff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff0055;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .title {
@@ -22,7 +52,7 @@
     text-shadow: 0 0 10px #ff0055b1, 0 0 20px #ff0055;
 }
 
-.tabla-usuarios {
+.table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -33,7 +63,7 @@
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
 }
 
-.tabla-usuarios thead th {
+.table thead th {
     background-color: #1a1a1a;
     color: #ff0055;
     padding: 18px;
@@ -44,62 +74,62 @@
     text-align: left;
 }
 
-.tabla-usuarios tbody td {
+.table tbody td {
     padding: 15px;
     color: #cff;
     border-bottom: 1px solid rgba(0, 242, 254, 0.1);
 }
 
-.tabla-usuarios tbody tr {
+.table tbody tr {
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.tabla-usuarios tbody tr:hover {
+.table tbody tr:hover {
     background-color: rgba(0, 242, 254, 0.2);
     box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.2);
 }
 
-.tabla-usuarios tbody tr:last-child td {
+.table tbody tr:last-child td {
     border-bottom: none;
 }
 
-.tabla-usuarios th:nth-child(1) {
+.table th:nth-child(1) {
     color: #ffff00 !important;
     text-shadow: 0 0 8px rgba(255, 255, 0, 0.6);
 }
 
-.tabla-usuarios td:nth-child(1) {
+.table td:nth-child(1) {
     font-weight: bold;
     color: #ffff00 !important;
 }
 
-.tabla-usuarios th:nth-child(2) {
+.table th:nth-child(2) {
     color: red !important;
     text-shadow: 0 0 8px rgba(255, 255, 0, 0.6);
 }
 
-.tabla-usuarios td:nth-child(2) {
+.table td:nth-child(2) {
     font-weight: bold;
     color: red !important;
 }
 
-.tabla-usuarios th:nth-child(3) {
+.table th:nth-child(3) {
     color: #00e5ff !important;
     text-shadow: 0 0 5px rgba(0, 229, 255, 0.4);
 }
 
-.tabla-usuarios td:nth-child(3) {
+.table td:nth-child(3) {
     font-weight: bold;
     color: #00e5ff !important;
 }
 
-.tabla-usuarios th:nth-child(4) {
+.table th:nth-child(4) {
     color: #39ff14 !important;
     text-shadow: 0 0 5px rgba(57, 255, 20, 0.4);
 }
 
-.tabla-usuarios td:nth-child(4) {
+.table td:nth-child(4) {
     font-weight: bold;
     color: #39ff14 !important;
 }
