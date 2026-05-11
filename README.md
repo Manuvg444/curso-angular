@@ -22,3 +22,17 @@
 *Ataca a la **API** con un componente **ACERCA DE** y muestra el id, username, email y phone*
 *Al hacer **click** sobre un a fila de la tabla, mostrará una **tabla personalizada** para cada usuario, con **todos sus datos** al completo*
 
+*Los **4 EJERCICIOS** planteados*
+
+## FILTROS
+
+--> **Incluye:**
+
+*Con la **TABLA** anterior del ejercicio **SERVICIOS** se crean algunos filtros*
+*Hay un **filtro** para mostrar las **personas** por **nombre o apellido**, por otro lado hay otro **filtro** que muestra las **personas** según su **ciudad**.
+
+--> **AMBOS FILTROS PUEDEN USARSE A LA VEZ**
+
+
+
+
