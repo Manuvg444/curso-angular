@@ -1,0 +1,12 @@
+{
+    "HELLO": "Hola Mundo",
+    "GREETING": "¡Bienvenido a la web!",
+    "TD": "Todas las ciudades",
+    "FT": "Filtrar por nombre",
+    "LF": "Limpiar filtros",
+    "TU": "TERMINAL DE USUARIOS",
+    "NAME": "NOMBRE",
+    "TEL": "TELÉFONO",
+    "ID": "IDENTIFICADOR",
+    "EM": "Correo electrónico"
+}

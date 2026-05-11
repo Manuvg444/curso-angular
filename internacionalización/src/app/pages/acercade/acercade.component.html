@@ -1,0 +1,51 @@
+<div class="table-container">
+
+    <select class="lang-select" [value]="currentLang()" (change)="changeLanguage($any($event.target).value)">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+    </select>
+
+    <h2 class="title">{{"TU" | translate}}</h2>
+
+
+    <div class="panel-filtros">
+
+        <input type="text" [ngModel]="nombreBusqueda()" (ngModelChange)="
+         nombreBusqueda.set($event)" placeholder="{{'FT'| translate}}" class="input">
+
+        <select [ngModel]="ciudadBusqueda()" (ngModelChange)="ciudadBusqueda.set($event)" class="select">
+            <option value="">{{'TD' | translate }}</option>
+            <option *ngFor="let u of usuariosOriginales()" [value]="u.address?.city">
+                {{ u.address?.city }}
+            </option>
+        </select>
+
+        <button (click)="limpiarFiltros()" class="btn">{{'LF'| translate}}</button>
+
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{"ID" | translate}}</th>
+                <th>{{"NAME" | translate}}</th>
+                <th>{{"EMAIL"| translate}}</th>
+                <th>{{"TEL"| translate}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of usuariosFiltrados()" [routerLink]="['/detalle' , u.id]">
+                <td>{{ u.id }}</td>
+                <td>{{ u.name }}</td>
+                <td>{{ u.email}}</td>
+                <td>{{ u.phone}}</td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
