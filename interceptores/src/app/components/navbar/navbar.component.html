@@ -1,0 +1,15 @@
+<nav style="padding: 1 rem; background: #eee; display:flex;
+gap: 10px;">
+    <a routerLink="/ 
+login">Inicio</a>
+
+    @if (isLoggedIn()) {
+    <a routerLink="/admin">Panel Admin</a>
+    <button (click)="logout()">Cerrar sesión</button>
+    }
+
+    @else {
+    <span>Inicia sesión para acceder al panel</span>
+
+    }
+</nav>
