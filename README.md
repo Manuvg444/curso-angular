@@ -33,6 +33,14 @@
 
 --> **AMBOS FILTROS PUEDEN USARSE A LA VEZ**
 
+## INTERNACIONALIZACIÓN
+
+--> **Incluye:**
+
+*Un  **SELECTOR** con el que se podrá elegir qué **idioma** mostrar, **INGLÉS/ESPAÑOL** *
+*Se cambian de idioma los elementos más simples y necesarios como el título*
+
+
 
 
 
