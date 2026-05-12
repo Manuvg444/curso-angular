@@ -40,6 +40,13 @@
 *Un  **SELECTOR** con el que se podrá elegir qué **idioma** mostrar, **INGLÉS/ESPAÑOL** *
 *Se cambian de idioma los elementos más simples y necesarios como el título*
 
+## GUARD
+
+--> **Incluye:**
+
+Crear una **ruta protegida /admin** que solo pueda accederse si el usuario **ha iniciado sesión (simulado).** 
+Se implementa **funcionalidad** para **iniciar sesión en el navbar cuando no está iniciada y de cerrar sesión una vez que se haya iniciado sesión.** 
+
 
 
 
