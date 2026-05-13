@@ -47,6 +47,14 @@
 Crear una **ruta protegida /admin** que solo pueda accederse si el usuario **ha iniciado sesión (simulado).** 
 Se implementa **funcionalidad** para **iniciar sesión en el navbar cuando no está iniciada y de cerrar sesión una vez que se haya iniciado sesión.** 
 
+## INTERCEPTORES 
+
+--> **Incluye: los 6 ejercicios especificados en la tarea**
+
+## PIPES
+
+--> **Incluye: los ejercicios especificados en ambas tareas**
+
 
 
 
