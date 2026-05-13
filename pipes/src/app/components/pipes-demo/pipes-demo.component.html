@@ -1,0 +1,70 @@
+<div style="margin-top: 30px; border-top: 2px slid black;">
+    <h2>Práctica Pipes Personalizados</h2>
+
+    <p>Ejercicios 1 (Saludo): {{ nombreUsuario | saludo }}</p>
+
+    <p>Ejercicio 2 (Doble): El doble de {{ numeroBase }} es {{numeroBase | doble }}</p>
+
+    <p>Ejercicio 3 (Resaltar): <span [innerHTML]="textoImportante |resaltar "></span></p>
+
+    <p>Ejercicio 4 (Edad): Alguien nacido en {{ fechaNac | edad }} años</p>
+</div>
+
+
+
+<div style="padding: 20px; font-family: sans-serif;">
+    <h1>Práctica de pipes</h1>
+
+    <!--EJERCICIO 2: FORMATEAR UN NOMBRE-->
+    <section>
+        <h3>Ejercicio 2: Texto</h3>
+        <p>Original: {{nombre}}</p>
+        <p>Uppercase: <b>{{ nombre | uppercase }}</b></p>
+        <p>Lowercase: <b> {{nombre | lowercase }}</b></p>
+        <p>Titlecase: <b>{{nombre | titlecase }}</b></p>
+    </section>
+
+    <hr>
+
+    <!-- EJERCICIO 3: FECHA Y HORA -->
+    <section>
+        <h3>Ejercicio3: Fecha</h3>
+        <p>Fecha completa: <b>{{ fecha | date:'full'}}</b> </p>
+        <p>Formato corto: <b>{{ fecha | date: 'short'}}</b></p>
+        <p>Personalizado (Día/Mes/Año): <b>{{fecha | date:'dd/MM/yyyy'}}</b></p>
+    </section>
+
+    <hr>
+
+    <!--EJERCICIO 4: Moneda -->
+    <section>
+        <h3>Ejercicio 4: Currency</h3>
+        <p>Precio: <b>{{ precio | currency: 'EUR'}}</b></p>
+    </section>
+
+    <hr>
+
+    <!-- EJERCICIO 5: Progreso-->
+    <section>
+        <h3>Ejercicio 5: Percent </h3>
+        <p>Progreso: <b>{{progreso | percent: '1.1-2'}}</b></p>
+    </section>
+
+    <hr>
+
+    <!--EJERCICIO 6: SLICE (CORTAR TEXTO)-->
+    <section>
+        <h3>Ejercicio 6: Slice</h3>
+        <p>Original: {{mensaje}}</p>
+        <p>Cortado (primeras 10 letras): <b>{{mensaje | slice:0:10}}...</b>/p>
+    </section>
+
+    <hr>
+
+    <!--EJERCICIO 7: OBJETO EN PANTALLA -->
+    <section>
+        <h3>Ejercicio 7: JSON</h3>
+        <p>Objeto crudo formateado: </p>
+        <pre><b>{{ usuario | json }}</b></pre>
+    </section>
+</div>

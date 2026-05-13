@@ -1,9 +1,12 @@
 <div class="table-container">
 
     <select class="lang-select" [value]="currentLang()" (change)="changeLanguage($any($event.target).value)">
-        <option value="es">ES</option>
-        <option value="en">EN</option>
+        <mat-slide-toggle>
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </mat-slide-toggle>
     </select>
+
 
     <h2 class="title">{{"TU" | translate}}</h2>
 

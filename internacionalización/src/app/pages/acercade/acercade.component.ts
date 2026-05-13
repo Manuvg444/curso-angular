@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { RouterLink } from "@angular/router";
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-acercade',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterModule, RouterLink, TranslateModule],
+  imports: [CommonModule, FormsModule, RouterModule, RouterLink, TranslateModule, MatSlideToggleModule],
   templateUrl: './acercade.component.html',
   styleUrl: './acercade.component.scss'
 })
