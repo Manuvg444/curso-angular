@@ -1,0 +1,22 @@
+<div style="padding: 50px; text-align: center;">
+    <h2>Iniciar sesión (json-server)</h2>
+
+    <form (ngSubmit)="onSubmit()">
+        <div style="margin-bottom: 10px;">
+            <input type="text" name="usuario" [(ngModel)]="user" placeholder="Usuario" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <input type="password" name="contraseña" [(ngModel)]="pass" placeholder="Contraseña" required>
+        </div>
+
+        <button type="submit" style="background-color: white; padding: 10px 20px;">
+            Entrar
+        </button>
+
+    </form>
+
+    <p style="font-size: 0.8rem; color: gray; margin-top: 20px;"> Prueba con admin / 123
+        (configurado en db.json)
+    </p>
+</div>

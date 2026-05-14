@@ -1,0 +1,10 @@
+{
+    "usuarios": [
+        {
+            "id": "1",
+            "username": "admin",
+            "password": "123a",
+            "token": "fake-jwt-token-admin"
+        }
+    ]
+}
