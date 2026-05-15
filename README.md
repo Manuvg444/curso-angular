@@ -56,6 +56,11 @@ Se implementa **funcionalidad** para **iniciar sesión en el navbar cuando no es
 --> **Incluye: los ejercicios especificados en ambas tareas**
 
 
+## JSON-SERVER
+
+--> **En lugar de ser un inicio de sesión simulado, los usuarios están dentro del json utilizándola como base de datos**
+
+
 
 
 
